@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous People</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Məşhurlar</h1>
+            <div class="filterArea">
+                <input type="text" id="searchInput" placeholder="Search by name...">
+
+                <div class="az-filter">
+                    <button id="btnA">A-dan Z-ye sırala</button>
+                </div>
+
+                <div class="age-filter">
+                    <button id="under">30 yaşdan aşağı</button>
+                    <button id="middle">30-40 arası</button>
+                    <button id="over">40 yaşdan yuxarı</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+
+
+            <div class="card-area" id="cardsContainer">
+
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./assets/js/home.js"></script>
+</body>
+
+</html>
