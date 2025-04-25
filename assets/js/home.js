@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "login.html";
   }
 
-  let famous = []; // Global dəyişkən
+  let famous = [];
 
   
   function renderCards(data) {
@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Cinsiyyət: ${gender}</p>
         <p class="address">Adress: ${city}</p>
       `;
+
+
+      card.addEventListener("click", () => {
+        localStorage.setItem("selectedPerson", JSON.stringify(person));
+        window.location.href = "person-details.html";
+      });
+  
       cardArea.appendChild(card);
     });
   }
